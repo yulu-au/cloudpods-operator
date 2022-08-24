@@ -141,6 +141,7 @@ func (occ *defaultClusterControl) updateOnecloudCluster(oc *v1alpha1.OnecloudClu
 		components.Suggestion(),
 		components.Scheduledtask(),
 		components.Report(),
+		components.MspOperation(),
 	}
 	var grp errgroup.Group
 	for _, component := range dependComponents {

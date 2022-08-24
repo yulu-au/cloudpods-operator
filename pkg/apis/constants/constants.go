@@ -376,6 +376,14 @@ const (
 	ReportPort         = 30967
 	ReportDB           = "report"
 	ReportDBUser       = "report"
+
+	ServiceNameMspOperation  = "mspoperation"
+	ServiceTypeMspOperation  = "mspoperation"
+	MspOperationAdminUser    = "mspoperation"
+	MspOperationAdminProject = SysAdminProject
+	MspOperationPort         = 30919
+	MspOperationDB           = "mspoperation"
+	MspOperationDBUser       = "mspoperation"
 )
 
 var (
