@@ -105,5 +105,5 @@ func (m *mspOperationManager) getDeployment(oc *v1alpha1.OnecloudCluster, cfg *v
 }
 
 func (m *mspOperationManager) getDeploymentStatus(oc *v1alpha1.OnecloudCluster, zone string) *v1alpha1.DeploymentStatus {
-	 return &oc.Status.MspOperation
+	return &oc.Status.MspOperation
 }

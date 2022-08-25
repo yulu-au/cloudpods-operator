@@ -339,7 +339,7 @@ type OnecloudClusterStatus struct {
 	MonitorStack   MonitorStackStatus   `json:"monitorStack,omitempty"`
 	Scheduledtask  DeploymentStatus     `json:"scheduledtask,omitempty"`
 	Report         DeploymentStatus     `json:"report,omitempty"`
-	MspOperation            DeploymentStatus     `json:"mspOperation,omitempty"`
+	MspOperation   DeploymentStatus     `json:"mspOperation,omitempty"`
 }
 
 type EtcdClusterSpec struct {
@@ -1000,6 +1000,6 @@ type OnecloudClusterConfig struct {
 	Suggestion      ServiceDBCommonOptions `json:"suggestion"`
 	Scheduledtask   ServiceDBCommonOptions `json:"scheduledtask"`
 	Report          ServiceDBCommonOptions `json:"report"`
-	MspOperation             ServiceDBCommonOptions `json:"mspOperation"`
+	MspOperation    ServiceDBCommonOptions `json:"mspOperation"`
 	Grafana         GrafanaConfig          `json:"grafana"`
 }

@@ -159,7 +159,7 @@ func SetDefaults_OnecloudClusterSpec(obj *OnecloudClusterSpec, isEE bool) {
 		CloudmonComponentType:        nHP(&obj.Cloudmon.DeploymentSpec, useHyperImage),
 		ScheduledtaskComponentType:   nHP(&obj.Scheduledtask, useHyperImage),
 		ReportComponentType:          nHP(&obj.Report, useHyperImage),
-		MspOperationComponentType:             nHP(&obj.MspOperation, useHyperImage),
+		MspOperationComponentType:    nHP(&obj.MspOperation, useHyperImage),
 	} {
 		SetDefaults_DeploymentSpec(spec.DeploymentSpec, getImage(
 			obj.ImageRepository, spec.Repository,
